@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rgb-server
+  namespace: rgb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rgb-server
+  template:
+    metadata:
+      labels:
+        app: rgb-server
+    spec:
+      containers:
+        - image: arceo99/rgb-server:latest
+          name: rgb-server
+          ports:
+            - containerPort: 3000
+          resources: {}
+      restartPolicy: Always
+status: {}

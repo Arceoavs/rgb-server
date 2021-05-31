@@ -1,0 +1,5 @@
+resources:
+  - rgb-ns.yaml
+  - rgb-service.yaml
+  - rgb-deployment.yaml
+  - rgb-ingress.yaml
