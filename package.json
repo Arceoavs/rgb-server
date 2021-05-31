@@ -1,0 +1,14 @@
+{
+  "name": "rgb-value-server",
+  "version": "1.0.0",
+  "description": "Returns a RGB value",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RGB"
+  ],
+  "author": "Arnold Arz",
+  "license": "ISC"
+}
