@@ -1,10 +1,14 @@
 
 const express = require('express')
+const randomColor = require("random-rgb-generator");
 const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('0x00ff')
+  const randomRgbString = randomColor()
+  const formattedString = `0x${randomRgbString.substring(1)}`
+  console.log(formattedString)
+  res.send(formattedString)
 })
 
 app.listen(port, () => {

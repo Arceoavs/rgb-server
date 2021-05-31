@@ -10,5 +10,9 @@
     "RGB"
   ],
   "author": "Arnold Arz",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "random-rgb-generator": "^1.0.2"
+  }
 }
